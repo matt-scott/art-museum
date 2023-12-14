@@ -1,10 +1,20 @@
+import { Route } from 'react-router-dom';
 import './App.css';
 import harvardArt from './data/hardvardArt.js'
-import GalleryNavigation from './components/GalleryNavigation/GalleryNavigation.js';
+import GalleryNavigation from './components/GalleryNavigation/index.js';
+import GalleryView from './components/GalleryView/index.js';
 
 function App() {
   return (
-    <GalleryNavigation galleries={harvardArt.records} />
+    <div className="page-wrapper">
+      <GalleryNavigation galleries={harvardArt.records} />
+
+
+
+      <Route path="/galleries/:galleryId">
+        <GalleryView galleries={harvardArt.records} />
+      </Route>
+    </div>
   );
 }
 
