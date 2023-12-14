@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import harvardArt from './data/hardvardArt.js'
 
 function App() {
   return (
