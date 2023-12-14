@@ -10,7 +10,6 @@ function GalleryView ({ galleries }) {
 
     return (
         <div className='GalleryView'>
-            <h1>Hello from GalleryView</h1>
             <h2>{gallery.name}</h2>
         </div>
     );
