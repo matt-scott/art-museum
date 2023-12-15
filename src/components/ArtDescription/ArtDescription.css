@@ -1,0 +1,9 @@
+.art-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-array {
+    max-width: 200px;
+}
